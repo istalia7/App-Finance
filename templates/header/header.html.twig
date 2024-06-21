@@ -1,0 +1,24 @@
+{% block body %}
+<header>
+  <nav class="flex bg-[#226CE0] h-20 font-Abril text-[#1B1725]">
+    <ul class="flex w-full list-none justify-evenly px-8 items-center">
+      <li class="absolute left-4">
+        <img
+          class="w-20"
+          src="{{ asset('images/logo_money.png') }}"
+          alt="logo money bag"
+        />
+      </li>
+      <li>Revenus</li>
+      <li>Dépenses</li>
+      <li class="absolute right-4">
+        <img
+          class="w-16"
+          src="{{ asset('images/male_user.png') }}"
+          alt="login logo"
+        />
+      </li>
+    </ul>
+  </nav>
+</header>
+{% endblock %}
