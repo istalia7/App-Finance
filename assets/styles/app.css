@@ -6,3 +6,40 @@
 body {
   background-color: #d0bcd5;
 }
+
+footer {
+  height: 3vh;
+}
+
+.line_disappear {
+  opacity: 0;
+}
+
+.dropdownmenu1_animated {
+  transform-origin: top center;
+  animation: recap_animation 300ms 60ms ease-in-out forwards;
+}
+
+.dropdownmenu2_animated {
+  transform-origin: top center;
+  animation: recap_animation 300ms 180ms ease-in-out forwards;
+}
+
+.dropdownmenu3_animated {
+  transform-origin: top center;
+  animation: recap_animation 300ms 360ms ease-in-out forwards;
+}
+
+@keyframes recap_animation {
+  0% {
+    opacity: 0;
+    transform: rotateX(-90deg);
+  }
+  50% {
+    transform: rotateX(-20deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+}
