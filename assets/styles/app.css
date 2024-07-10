@@ -32,7 +32,7 @@ footer {
 
 .dropdownmenu1.hide {
   transform-origin: top center;
-  animation: recap_animation_backwards 300ms 60ms ease-in-out forwards;
+  animation: recap_animation_backwards 300ms 360ms ease-in-out forwards;
 }
 
 .dropdownmenu2.hide {
@@ -42,7 +42,7 @@ footer {
 
 .dropdownmenu3.hide {
   transform-origin: top center;
-  animation: recap_animation_backwards 300ms 360ms ease-in-out forwards;
+  animation: recap_animation_backwards 300ms 60ms ease-in-out forwards;
 }
 
 @keyframes recap_animation {
