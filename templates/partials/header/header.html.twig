@@ -3,14 +3,16 @@
   <nav class="flex bg-[#226CE0] h-20 font-Abril text-[#1B1725]">
     <ul class="flex w-full list-none justify-evenly px-8 items-center text-xl">
       <li class="absolute left-4">
-        <img
-          class="w-20"
-          src="{{ asset('images/logo_money.png') }}"
-          alt="logo money bag"
-        />
+        <a href="{{ path('app_recap') }}">
+          <img
+            class="w-20"
+            src="{{ asset('images/logo_money.png') }}"
+            alt="logo money bag"
+          />
+        </a>
       </li>
-      <li>Revenus</li>
-      <li>Dépenses</li>
+      <li><a href="{{ path('app_revenu') }}">Revenus</a></li>
+      <li><a href="{{ path('app_depense') }}">Dépenses</a></li>
       <li class="absolute right-4">
         <img
           class="w-16"
