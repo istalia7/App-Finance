@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  mode: "jit",
   content: ["./assets/**/*.js", "./templates/**/*.html.twig"],
   theme: {
     fontFamily: {
@@ -8,4 +9,7 @@ module.exports = {
     extend: {},
   },
   plugins: [],
+  jit: {
+    debug: true,
+  },
 };

@@ -1,5 +1,5 @@
 {% extends 'base.html.twig' %} {% block title %}Page Revenu{% endblock %} {%
-block body %} {% include "./partials/header/header.html.twig" %}
+block body %}
 <div class="container h-dvh w-9/12 mx-auto">
   <table class="border border-[#1B1725] bg-[#A499B3] mt-16 w-full">
     <thead class="w-full">
@@ -10,14 +10,16 @@ block body %} {% include "./partials/header/header.html.twig" %}
         <th class="px-8">Montant hobbies</th>
       </tr>
     </thead>
+    {% for revenu in revenus %}
     <tbody class="text-[#534B62]">
       <tr>
-        <td>14/06/2023</td>
-        <td>1 742€</td>
-        <td>1 600€</td>
-        <td>142€</td>
+        <td>{{ revenu.dateRevenu|date("j F, Y", "Europe/Paris") }}</td>
+        <td>{{ revenu.montant }}€</td>
+        <td>{{ revenu.economie }}€</td>
+        <td>{{ revenu.montant - revenu.economie }}€</td>
       </tr>
     </tbody>
+    {% endfor %}
   </table>
 </div>
-{% include "./partials/footer/footer.html.twig" %} {% endblock %}
+{% endblock %}

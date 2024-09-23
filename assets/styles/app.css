@@ -15,6 +15,7 @@ footer {
   opacity: 0;
 }
 
+/* Liste déroulante Récap annuel */
 .dropdownmenu1.show {
   transform-origin: top center;
   animation: recap_animation 300ms 60ms ease-in-out forwards;
@@ -45,6 +46,7 @@ footer {
   animation: recap_animation_backwards 300ms 60ms ease-in-out forwards;
 }
 
+/* Keyframe pour le recap annuel */
 @keyframes recap_animation {
   0% {
     opacity: 0;
@@ -59,6 +61,7 @@ footer {
   }
 }
 
+/* Keyframe pour le recap annuel à l'envers */
 @keyframes recap_animation_backwards {
   from 0% {
     opacity: 1;
@@ -70,6 +73,48 @@ footer {
   100% {
     opacity: 0;
     transform: rotateX(-90deg);
+  }
+}
+
+.loginMenuAnimated {
+  animation: loginMenuAnimation 1s ease-in-out forwards;
+}
+
+/* See login_menu.js */
+/* .loginMenuAnimatedReversed {
+  animation: loginMenuAnimationReversed 1s ease-in-out forwards;
+} */
+
+.login_menu {
+  transform: translateY(-50vh);
+}
+
+/* See login_menu.js */
+/* @keyframes loginMenuAnimationReversed {
+  from 0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-10vh);
+  }
+} */
+
+@keyframes loginMenuAnimation {
+  from 0% {
+    opacity: 1;
+    transform: translateY(-10vh);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 

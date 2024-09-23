@@ -25,7 +25,7 @@ plus.addEventListener("click", () => {
       dropdownmenu1.style.opacity = 0;
       dropdownmenu2.style.opacity = 0;
       dropdownmenu3.style.opacity = 0;
-    }, 600); // Delay matches animation duration
+    }, 1000); // Delay matches animation duration
   } else {
     dropdownmenu1.classList.add("show");
     dropdownmenu2.classList.add("show");
